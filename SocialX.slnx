@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SocialX.Api/SocialX.Api.csproj" />
+    <Project Path="src/SocialX.Core/SocialX.Core.csproj" />
+    <Project Path="src/SocialX.Infra/SocialX.Infra.csproj" />
+    <Project Path="src/SocialX.Service/SocialX.Service.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SocialX.Api.Tests/SocialX.Api.Tests.csproj" />
+    <Project Path="tests/SocialX.Service.Tests/SocialX.Service.Tests.csproj" />
+  </Folder>
+</Solution>
