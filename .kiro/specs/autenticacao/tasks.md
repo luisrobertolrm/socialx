@@ -6,7 +6,7 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
 
 ## Tasks
 
-- [~] 1. Configurar infraestrutura de dados no backend
+- [ ] 1. Configurar infraestrutura de dados no backend
   - [x] 1.1 Criar entidades Pessoa e LoginSocial no SocialX.Core
     - Criar enums Role, StatusConta e Provider
     - Definir entidade Pessoa com todos os campos obrigatórios
@@ -36,10 +36,10 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Aplicar migration no banco de dados
     - _Requirements: 3.1, 3.2_
 
-- [~] 2. Checkpoint - Validar estrutura de dados
+- [ ] 2. Checkpoint - Validar estrutura de dados
   - Ensure all tests pass, ask the user if questions arise.
 
-- [~] 3. Implementar validação de token do Google
+- [ ] 3. Implementar validação de token do Google
   - [x] 3.1 Criar GoogleTokenValidator service no SocialX.Service
     - Implementar ValidateTokenAsync usando Google.Apis.Auth
     - Implementar ExtractUserInfo para extrair dados do payload
@@ -61,7 +61,7 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Testar token com audience incorreto
     - _Requirements: 2.3, 2.4_
 
-- [~] 4. Implementar AuthService no backend
+- [ ] 4. Implementar AuthService no backend
   - [x] 4.1 Criar interface IAuthService e implementação AuthService
     - Implementar VerifyLoginSocialAsync
     - Implementar CheckAccountStatusAsync
@@ -103,8 +103,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Usar banco de dados em memória
     - _Requirements: 4.1, 4.2, 4.3, 5.1, 5.2, 5.3, 6.1, 7.7, 7.8, 8.7_
 
-- [~] 5. Criar DTOs e validadores
-  - [-] 5.1 Criar DTOs no SocialX.Service
+- [ ] 5. Criar DTOs e validadores
+  - [x] 5.1 Criar DTOs no SocialX.Service
     - Criar PessoaDto
     - Criar ValidateGoogleTokenRequest
     - Criar CompletarCadastroRequest
@@ -113,7 +113,7 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Criar UpdateProfileResponse
     - _Requirements: 2.1, 7.4, 8.4_
   
-  - [~] 5.2 Criar validadores FluentValidation
+  - [x] 5.2 Criar validadores FluentValidation
     - Criar CompletarCadastroRequestValidator
     - Criar UpdateProfileRequestValidator
     - Validar formatos de telefone e data
@@ -132,15 +132,15 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Verificar mensagens de erro
     - _Requirements: 7.11, 7.12, 7.13_
   
-  - [~] 5.6 Criar AutoMapper Profile para mapeamento Pessoa <-> PessoaDto
+  - [x] 5.6 Criar AutoMapper Profile para mapeamento Pessoa <-> PessoaDto
     - Configurar mapeamento bidirecional
     - _Requirements: 3.1_
 
-- [~] 6. Checkpoint - Validar serviços e DTOs
+- [ ] 6. Checkpoint - Validar serviços e DTOs
   - Ensure all tests pass, ask the user if questions arise.
 
-- [~] 7. Implementar AuthController
-  - [~] 7.1 Criar AuthController no SocialX.Api
+- [ ] 7. Implementar AuthController
+  - [ ] 7.1 Criar AuthController no SocialX.Api
     - Implementar POST /api/auth/google
     - Implementar POST /api/auth/completar-cadastro
     - Implementar PUT /api/auth/perfil
@@ -153,8 +153,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Verificar códigos de status HTTP corretos
     - _Requirements: 2.3, 2.4, 5.3, 5.4_
 
-- [~] 8. Implementar middleware de autenticação
-  - [~] 8.1 Criar middleware de autenticação JWT
+- [ ] 8. Implementar middleware de autenticação
+  - [ ] 8.1 Criar middleware de autenticação JWT
     - Validar token no header Authorization
     - Extrair user ID do token
     - Disponibilizar user ID para controllers
@@ -171,8 +171,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Testar com token válido
     - _Requirements: 12.1, 12.2, 12.3_
 
-- [~] 9. Configurar injeção de dependências e pipeline
-  - [~] 9.1 Registrar serviços no Program.cs
+- [ ] 9. Configurar injeção de dependências e pipeline
+  - [ ] 9.1 Registrar serviços no Program.cs
     - Registrar GoogleTokenValidator
     - Registrar AuthService
     - Registrar validadores FluentValidation
@@ -181,16 +181,16 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Configurar tratamento global de exceções
     - _Requirements: 2.1, 4.1, 7.4, 8.4_
   
-  - [~] 9.2 Configurar appsettings.json
+  - [ ] 9.2 Configurar appsettings.json
     - Adicionar Google Client ID
     - Configurar connection string do PostgreSQL
     - _Requirements: 1.1, 2.5_
 
-- [~] 10. Checkpoint - Validar backend completo
+- [ ] 10. Checkpoint - Validar backend completo
   - Ensure all tests pass, ask the user if questions arise.
 
-- [~] 11. Criar interfaces TypeScript no frontend
-  - [~] 11.1 Criar tipos e interfaces em types/auth.ts
+- [ ] 11. Criar interfaces TypeScript no frontend
+  - [ ] 11.1 Criar tipos e interfaces em types/auth.ts
     - Criar interface AuthState
     - Criar interface Pessoa
     - Criar interface LoginSocial
@@ -215,8 +215,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - **Property 26: Pessoa Serialization Round-Trip**
     - **Validates: Requirements 17.11**
 
-- [~] 12. Implementar googleAuthService
-  - [~] 12.1 Criar googleAuthService em services/googleAuthService.ts
+- [ ] 12. Implementar googleAuthService
+  - [ ] 12.1 Criar googleAuthService em services/googleAuthService.ts
     - Implementar configure com webClientId
     - Implementar signIn usando @react-native-google-signin/google-signin
     - Implementar signOut
@@ -228,8 +228,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Testar cenários de sucesso, cancelamento e erro
     - _Requirements: 1.3, 1.4, 1.5, 17.1, 17.6_
 
-- [~] 13. Implementar authApiService
-  - [~] 13.1 Criar authApiService em services/authApiService.ts
+- [ ] 13. Implementar authApiService
+  - [ ] 13.1 Criar authApiService em services/authApiService.ts
     - Implementar validateGoogleToken
     - Implementar completarCadastro
     - Implementar updateProfile
@@ -243,8 +243,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Testar tratamento de erros HTTP
     - _Requirements: 13.1, 13.2, 13.3_
 
-- [~] 14. Implementar sessionService
-  - [~] 14.1 Criar sessionService em services/sessionService.ts
+- [ ] 14. Implementar sessionService
+  - [ ] 14.1 Criar sessionService em services/sessionService.ts
     - Implementar saveSession com criptografia
     - Implementar loadSession com descriptografia
     - Implementar clearSession
@@ -266,11 +266,11 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Testar dados corrompidos
     - _Requirements: 17.2_
 
-- [~] 15. Checkpoint - Validar services do frontend
+- [ ] 15. Checkpoint - Validar services do frontend
   - Ensure all tests pass, ask the user if questions arise.
 
-- [~] 16. Criar AuthContext e provider
-  - [~] 16.1 Criar AuthContext em contexts/AuthContext.tsx
+- [ ] 16. Criar AuthContext e provider
+  - [ ] 16.1 Criar AuthContext em contexts/AuthContext.tsx
     - Criar contexto com AuthState
     - Implementar AuthProvider com estado e métodos
     - Implementar login, logout, completarCadastro, updateProfile
@@ -284,8 +284,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Verificar notificações de observers
     - _Requirements: 15.3, 15.4_
 
-- [~] 17. Implementar LoginScreen
-  - [~] 17.1 Criar LoginScreen em screens/LoginScreen.tsx
+- [ ] 17. Implementar LoginScreen
+  - [ ] 17.1 Criar LoginScreen em screens/LoginScreen.tsx
     - Criar UI com botão "Entrar com Google"
     - Implementar handleGoogleSignIn
     - Integrar com AuthContext
@@ -304,8 +304,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Mockar AuthContext
     - _Requirements: 17.3_
 
-- [~] 18. Implementar CompletarCadastroScreen
-  - [~] 18.1 Criar CompletarCadastroScreen em screens/CompletarCadastroScreen.tsx
+- [ ] 18. Implementar CompletarCadastroScreen
+  - [ ] 18.1 Criar CompletarCadastroScreen em screens/CompletarCadastroScreen.tsx
     - Criar formulário com campos obrigatórios
     - Pré-preencher nome, email e foto do Google (disabled)
     - Implementar campos editáveis: apelido, telefone, data_nascimento
@@ -321,8 +321,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Mockar AuthContext
     - _Requirements: 17.4_
 
-- [~] 19. Implementar EditarPerfilScreen
-  - [~] 19.1 Criar EditarPerfilScreen em screens/EditarPerfilScreen.tsx
+- [ ] 19. Implementar EditarPerfilScreen
+  - [ ] 19.1 Criar EditarPerfilScreen em screens/EditarPerfilScreen.tsx
     - Carregar dados do perfil atual
     - Criar formulário com campos editáveis
     - Manter nome e email como read-only
@@ -340,8 +340,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Mockar AuthContext
     - _Requirements: 17.5_
 
-- [~] 20. Implementar navegação condicional
-  - [~] 20.1 Configurar React Navigation com navegação condicional
+- [ ] 20. Implementar navegação condicional
+  - [ ] 20.1 Configurar React Navigation com navegação condicional
     - Criar stack navigator para autenticação (Login, CompletarCadastro)
     - Criar stack navigator para app autenticado (Home, EditarPerfil)
     - Implementar lógica de navegação baseada em AuthState
@@ -354,8 +354,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - **Property 15: Navigation Based on Authentication State**
     - **Validates: Requirements 9.1, 9.2, 9.3, 9.4**
 
-- [~] 21. Implementar exibição de perfil
-  - [~] 21.1 Criar componente UserProfile para exibir dados do usuário
+- [ ] 21. Implementar exibição de perfil
+  - [ ] 21.1 Criar componente UserProfile para exibir dados do usuário
     - Exibir nome, email e foto
     - Implementar fallback para foto (avatar padrão)
     - Atualizar UI em 500ms após login
@@ -371,8 +371,8 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Testar atualização de UI
     - _Requirements: 14.1, 14.2, 14.3_
 
-- [~] 22. Implementar logout
-  - [~] 22.1 Adicionar funcionalidade de logout
+- [ ] 22. Implementar logout
+  - [ ] 22.1 Adicionar funcionalidade de logout
     - Criar botão de logout na UI
     - Implementar handleLogout no AuthContext
     - Revogar sessão do Google
@@ -391,19 +391,19 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Verificar tempo de execução
     - _Requirements: 11.5_
 
-- [~] 23. Checkpoint - Validar frontend completo
+- [ ] 23. Checkpoint - Validar frontend completo
   - Ensure all tests pass, ask the user if questions arise.
 
-- [~] 24. Configurar Google Sign-In no frontend
-  - [~] 24.1 Configurar Google Sign-In SDK
+- [ ] 24. Configurar Google Sign-In no frontend
+  - [ ] 24.1 Configurar Google Sign-In SDK
     - Instalar @react-native-google-signin/google-signin
     - Configurar webClientId no código
     - Configurar Google Sign-In no Android (google-services.json)
     - Configurar Google Sign-In no iOS (Info.plist)
     - _Requirements: 1.1, 1.6_
 
-- [~] 25. Configurar validação de token no backend
-  - [~] 25.1 Configurar Google.Apis.Auth no backend
+- [ ] 25. Configurar validação de token no backend
+  - [ ] 25.1 Configurar Google.Apis.Auth no backend
     - Instalar pacote NuGet Google.Apis.Auth
     - Configurar Client ID no appsettings.json
     - _Requirements: 2.1, 2.5_
@@ -435,25 +435,25 @@ Este plano implementa o sistema completo de autenticação usando Google Sign-In
     - Login → Fechar app → Reabrir app → Verificar sessão restaurada
     - _Requirements: 10.2, 10.3_
 
-- [~] 27. Validação final e documentação
-  - [~] 27.1 Executar todos os testes
+- [ ] 27. Validação final e documentação
+  - [ ] 27.1 Executar todos os testes
     - Executar dotnet test no backend
     - Executar npm test no frontend
     - Verificar cobertura de testes (mínimo 80%)
     - _Requirements: 17.9_
   
-  - [~] 27.2 Executar validações de código
+  - [ ] 27.2 Executar validações de código
     - Executar dotnet build no backend
     - Executar npm run lint no frontend
     - Executar npm run typecheck no frontend
     - _Requirements: 16.9_
   
-  - [~] 27.3 Testar fluxo completo manualmente
+  - [ ] 27.3 Testar fluxo completo manualmente
     - Testar em dispositivo Android
     - Testar em dispositivo iOS
     - Verificar todos os cenários de erro
 
-- [~] 28. Checkpoint final - Sistema completo
+- [ ] 28. Checkpoint final - Sistema completo
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes

@@ -11,6 +11,25 @@ obj/
 .vs/
 .vscode/
 *.DotSettings.user
+*.userprefs
+*.pidb
+*.sln.docstates
+*.swp
+*~
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.dbmdl
+*.jfm
+*.pfx
+*.publishsettings
+project.lock.json
+project.fragment.lock.json
+artifacts/
+TestResults/
+.dotnet/
+.localhistory/
 
 # React Native
 node_modules/
@@ -27,7 +46,21 @@ dist/
 *.mobileprovision
 *.orig.*
 web-build/
+.bundle/
+*.hprof
+.gradle/
+local.properties
+*.iml
+.idea/
+.cxx/
+build/
+.externalNativeBuild/
+*.apk
+*.aab
+*.ipa
 
 # OS
 .DS_Store
 Thumbs.db
+*.swp
+*~
