@@ -17,7 +17,7 @@ export class GoogleSignInService {
 
   // Verificar se já está logado
   static async isSignedIn(): Promise<boolean> {
-    return await GoogleSignin.isSignedIn();
+    return GoogleSignin.getCurrentUser() !== null;
   }
 
   // Fazer login

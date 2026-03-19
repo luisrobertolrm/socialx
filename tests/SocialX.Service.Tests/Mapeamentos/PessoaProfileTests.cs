@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.Extensions.Logging.Abstractions;
 using SocialX.Core.Entidades;
 using SocialX.Core.Enums;
 using SocialX.Service.DTOs;
@@ -16,7 +17,7 @@ public class PessoaProfileTests
         MapperConfiguration config = new MapperConfiguration(cfg =>
         {
             cfg.AddProfile<PessoaProfile>();
-        });
+        }, NullLoggerFactory.Instance);
 
         _mapper = config.CreateMapper();
     }
@@ -145,7 +146,7 @@ public class PessoaProfileTests
         MapperConfiguration config = new MapperConfiguration(cfg =>
         {
             cfg.AddProfile<PessoaProfile>();
-        });
+        }, NullLoggerFactory.Instance);
 
         // Act & Assert
         config.AssertConfigurationIsValid();

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging.Abstractions;
 using SocialX.Api.Handlers;
 using SocialX.Core.Interface;
 using SocialX.Infra.Data;
@@ -34,7 +35,7 @@ builder.Services.AddScoped<IEntidadeTesteService, EntidadeTesteService>();
 MapperConfiguration config = new MapperConfiguration(cfg =>
 {
     cfg.AddProfile<EntidadeTesteProfile>();
-});
+}, NullLoggerFactory.Instance);
 IMapper mapper = config.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
