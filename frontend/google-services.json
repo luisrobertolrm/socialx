@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "849131252690",
+    "project_id": "socialx-9be3f",
+    "storage_bucket": "socialx-9be3f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849131252690:android:d1a27bbf92543453b1760b",
+        "android_client_info": {
+          "package_name": "com.example.socialx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849131252690-tmg67pl23vr7n8ggn1b87301f8klurmu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialx",
+            "certificate_hash": "78df6ad2a31534c5beac4cce32b6188082a7a998"
+          }
+        },
+        {
+          "client_id": "849131252690-f59f7p3f5el0egjesad4asq0thi0vbie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlZ1TjdLgQWsBjj4PXMv2RiW9HIUp1imQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849131252690-f59f7p3f5el0egjesad4asq0thi0vbie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
